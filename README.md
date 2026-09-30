@@ -20,6 +20,8 @@ An advanced asynchronous FastAPI application designed to automate dairy farm man
 
 ------------------------------
 ## 📁 System Architecture
+
+```text
 app/
 ├── api/
 │   ├── api_v1.py           # Master API router configuration
@@ -40,7 +42,7 @@ app/
 │   ├── feed.py              # Pydantic structures for tracking food supplies
 │   └── milk_tracking.py     # Pydantic schemas protecting milk entry inputs
 └── main.py                  # API instantiation, Lifespan hooks, and Middlewares
-
+```
 ------------------------------
 ## ⚡ Getting Started
 ## 1. Prerequisites
