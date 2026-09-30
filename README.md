@@ -1,4 +1,3 @@
-------------------------------
 ## Dairy Farm Automation API
 An advanced asynchronous FastAPI application designed to automate dairy farm management. The system handles animal tracking, milk production logs, and feed inventory tracking, while embedding a LangChain-powered AI Agent that dynamically executes farm tasks using function-calling tools.
 ------------------------------
@@ -21,7 +20,6 @@ An advanced asynchronous FastAPI application designed to automate dairy farm man
 
 ------------------------------
 ## 📁 System Architecture
-
 app/
 ├── api/
 │   ├── api_v1.py           # Master API router configuration
@@ -44,7 +42,8 @@ app/
 └── main.py                  # API instantiation, Lifespan hooks, and Middlewares
 
 ------------------------------
-## ⚡ Getting Started## 1. Prerequisites
+## ⚡ Getting Started
+## 1. Prerequisites
 Ensure you have Python 3.10+ and a running PostgreSQL instance configured.
 ## 2. Environment Setup
 Create a .env file in the root directory to declare your external API secrets:
@@ -70,7 +69,8 @@ uvicorn app.main:app --reload
 
 Upon startup, the application's asynchronous lifespan handler will automatically connect to your database and generate all necessary structural tables if they do not already exist.
 ------------------------------
-## 🔌 API Endpoints Summary## Animals (/api/v1/animals)
+## 🔌 API Endpoints Summary
+## Animals (/api/v1/animals)
 
 * POST /register_animal - Add a unique animal with structural constraints.
 * PATCH /update_animal/{tag_number} - Adjust parameters dynamically.
